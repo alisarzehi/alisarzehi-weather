@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function InputLocation({
   onCity,
@@ -24,6 +25,7 @@ function InputLocation({
           </label>
           <i className="bi bi-search text-slate-200 absolute top-0 right-0 bg-slate-950/50 hover:bg-slate-900/25 p-2 sm:p-4 md:p-6" />
         </div>
+        <Button label="search" />
       </div>
     </>
   );
