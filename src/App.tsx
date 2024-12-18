@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Background from "./components/Background";
-// import InfoWeather from "./components/InfoWeather";
 import InputLocation from "./components/InputLocation";
 import Temperature from "./components/Temperature";
 import { getCurrentWeather } from "./utils/axios";
@@ -31,10 +30,6 @@ function App() {
         <div className="relative z-10 p-0 h-screen bg-transparent">
           <div className="absolute h-2/3 w-screen bottom-0 backdrop-blur-md bg-black/25 sm:relative sm:flex sm:h-screen sm:w-2/5 sm:float-right justify-start">
             <InputLocation onCity={handleChangeLocation} />
-            {/* <InfoWeather
-              name={weatherData?.name as string}
-              temp={weatherData?.main.temp as number}
-            /> */}
           </div>
         </div>
         <Temperature name={weatherData?.name} temp={weatherData?.main.temp} />
